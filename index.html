@@ -291,6 +291,7 @@ img{display:block}
   .proof .social{animation:mind-detail .54s cubic-bezier(.2,.8,.2,1) 1.18s backwards}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+html.entry-complete :is(.logo,.nav-links a,.actions,.intro h1,.intro .btn-solid,.goals .goal,.display__row--1 .w1,.display__row--1 .w2,.display__row--2,.inset,.proof p,.proof .social){animation:none!important}
 </style>
 </head>
 <body>
@@ -369,5 +370,6 @@ img{display:block}
   document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
 })();
 </script>
+<script>setTimeout(function(){document.documentElement.classList.add("entry-complete")},2300)</script>
 </body>
 </html>
